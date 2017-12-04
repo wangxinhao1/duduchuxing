@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../base.css"/>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				padding-top: 3rem;
+				background: #FFFFFF;
+			}
+			
+			.top {
+				line-height: 3rem;
+				width: 100%;
+				border-bottom: 1px solid #EEEEEE;
+				font-size: 1rem;
+				color: #007AFF;
+				height: 3rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.clear {
+				width: 20%;
+				display: inline-block;
+				float: left;
+			}
+			
+			.clear a img {
+				width: 1.3rem;
+				height: 1.5rem;
+				margin-left: 1rem;
+				margin-top: 10px;
+			}
+			
+			.zhong {
+				text-align: center;
+				display: inline-block;
+				width: 60%;
+				float: left;
+			}
+			
+			.zhong span {
+				font-family: PingFang-SC-Bold;
+				font-size: 1rem;
+				color: #4a5cb8;
+			}
+			
+			.home {
+				width: 20%;
+				display: inline-block;
+				float: left;
+			}
+			
+			.home a {
+				float: right;
+				margin-right: 1rem;
+			}
+			
+			.home a img {
+				width: 1.5rem;
+				height: 1.5rem;
+				margin-top: 10px;
+			}
+			
+			.content {
+				padding: 10px;
+			}
+			
+			.mui-content-padded {
+				margin: 10px 0;
+			}
+			#fachutime{
+				font-size: 14px;
+				letter-spacing: 1px;
+				color: #333333;
+				margin-bottom: 7px;
+			}
+			.mui-table-view::after{
+				display: none;
+			}
+			.mui-table-view-cell{
+				padding: 0;
+				padding-top: 15px;
+			}
+			.mui-content-padded img{
+				width: 23px;
+				height: 23px;
+				margin-right: 5px;
+			}
+			.mantu{
+				display: flex;
+				margin-bottom: 8px;
+			}
+			#manyi{
+				font-size: 15px;
+				color: #FF4949;
+				margin-right: 15px;
+			}
+			#tutu{
+				font-size: 15px;
+				color: #333333;
+			}
+			#pingjia{
+				font-size: 14px;
+				color: #333333;
+				margin-bottom: 10px;
+			}
+			#item1mobile{
+				position: relative;
+			}
+			.bianji{
+				width: 67px;
+				height: 30px;
+				background: #FF4949;
+				color: #FFFFFF;
+				border-radius: 3px;
+				text-align: center;
+				font-size: 15px;
+				padding-top: 4px;
+				letter-spacing: 1px;
+				position: absolute;
+				right: 0;
+				top: 30px;
+			}
+			.carhuifu{
+				border-top: 1px solid #EEEEEE;
+				width: 100%;
+				display: flex;
+				padding-top: 10px;
+			}
+			.carzhu{
+				color: #FF4949;
+				font-size: 13px;
+			}
+			#huifu{
+				font-size: 14px;
+				color: #333333;
+			}
+			.touxiang{
+				width: 43px;
+				height: 43px;
+				border-radius: 50%;
+				background: #4CD964;
+				float:left;
+				margin-right: 15px;
+			}
+			.niming{
+				color: #333333;
+				font-size: 13px;
+				letter-spacing: 1px;
+			}
+			#nimingtime{
+				font-size: 11px;
+				margin-left: 5px;
+			}
+			#item2mobile{
+				position: relative;
+			}
+			.quhuifu{
+				width: 68px;
+				height: 30px;
+				background: #FF4949;
+				border-radius: 3px;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 15px;
+				padding-top: 4px;
+				position: absolute;
+				right: 0;
+				top: 30px;
+			}
+			#shoudaopingjia{
+				font-size: 14px;
+				letter-spacing: 1px;
+				color: #333333;
+				margin-top: 10px;
+				border-bottom: 1px solid #EEEEEE;
+				padding-bottom: 10px;
+			}
+			.wohuifu{
+				margin-top: 10px;
+				display: flex;
+			}
+			.wo{
+				font-size: 13px;
+				letter-spacing: 1px;
+				color: #FF4949;
+			}
+			#wodehui{
+				font-size: 14px;
+				color: #333333;
+			}
+		</style>
+	</head>
+	<body>
+		<!--顶部菜单-->
+		<div class="top">
+			<div class="clear">
+				<a href="gerenzhongxin.html"><img src="../img/个人中心.png" /></a>
+			</div>
+			<div class="zhong">
+				<span>我的评价</span>
+			</div>
+			<div class="home">
+				<a href="../index.html"><img src="../img/首页.png" /></a>
+			</div>
+		</div>
+		<!--车主乘客选项-->
+		<div class="content">
+			<div class="mui-segmented-control" id="segmentedControl">
+				<a href="#item1mobile" class="mui-control-item mui-active">
+					我发出的
+				</a>
+				<a href="#item2mobile" class="mui-control-item">
+					我收到的
+				</a>
+			</div>
+			<!--车主乘客子选项-->
+			<div class="mui-content-padded">
+				<div class="mui-control-content mui-active" id="item1mobile">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<p id="fachutime">2017-11-14</p>
+							<div class="mantu">
+								<img src="../img/赞.png" />
+								<p id="manyi">满意</p>
+								<img src="../img/吐槽.png" />
+								<p id="tutu">吐槽</p>
+							</div>
+							<p id="pingjia">很好很好</p>
+							<div class="bianji">
+								编辑
+							</div>
+							<div class="carhuifu">
+								<p class="carzhu">车主回复&nbsp;(<span id="huifutime">2017-11-14</span>)&nbsp;：</p>
+								<p id="huifu">多谢</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-control-content" id="item2mobile">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<div class="yonghu">
+								<div class="touxiang">
+
+								</div>
+								<p class="niming">匿名用户<span id="nimingtime">2017-11-14</span></p>
+								<div class="mantu">
+									<img src="../img/赞.png" />
+									<p id="manyi">满意</p>
+									<img src="../img/吐槽.png" />
+									<p id="tutu">吐槽</p>
+								</div>
+							</div>
+							<p id="shoudaopingjia">很好很好</p>
+							<div class="quhuifu">
+								去回复
+							</div>
+							<div class="wohuifu">
+								<p class="wo">我的回复(<span id="wotime">2017-11-14</span>)&nbsp;：</p>
+								<p id="wodehui">多谢</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.0.min.js" type="text/javascript"></script>
+	
+
+</html>

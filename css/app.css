@@ -1,0 +1,94 @@
+	body {
+		background: #f1f9f6;
+	}
+	
+	.mui-bar {
+		background: #fff;
+		border-bottom: 1px solid #cecece;
+		height: 40px;
+	}
+	
+	.mui-bar-nav {
+		box-shadow: none;
+	}
+	
+	.mui-title {
+		color: #333;
+		font-size: 20px;
+		height: 40px;
+		line-height: 40px;
+	}
+	
+	.b-f{
+		background-color: #fff;
+	}
+	input[type=color],
+	input[type=date],
+	input[type=datetime-local],
+	input[type=datetime],
+	input[type=email],
+	input[type=month],
+	input[type=number],
+	input[type=password],
+	input[type=search],
+	input[type=tel],
+	input[type=text],
+	input[type=time],
+	input[type=url],
+	input[type=week],
+	select,
+	textarea {
+		padding: 0;
+	}
+	
+	.mui-bar-nav~.mui-content {
+		padding-top: 40px;
+	}
+	
+	.mui-bar .mui-icon {
+		padding: 8px 0;
+	}
+	
+	.back {
+		color: #049f78;
+	}
+	
+	.back:active {
+		color: #049f78;
+	}
+	
+	
+	.mui-btn.mui-active:enabled,
+	.mui-btn:enabled:active,
+	button.mui-active:enabled,
+	button:enabled:active,
+	input[type=button].mui-active:enabled,
+	input[type=button]:enabled:active,
+	input[type=reset].mui-active:enabled,
+	input[type=reset]:enabled:active,
+	input[type=submit].mui-active:enabled,
+	input[type=submit]:enabled:active {
+		background-color: #049E78;
+	}
+	
+	/*单选框样式和颜色*/
+	.mui-checkbox input[type=checkbox]:checked:before,
+	.mui-radio input[type=radio]:checked:before {
+		color: #049E78;
+	}
+	.mui-radio input[type=radio]:checked:before {
+		content: '\e442';
+	}
+	.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right:after{
+		content: '\e442';
+	}
+	.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{
+		color: #049E78;
+		
+	}
+	.mui-content{
+		background: #f1f9f6;
+	}
+.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+	border: none;
+}

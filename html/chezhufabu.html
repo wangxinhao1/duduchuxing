@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="../base.css" />
+    
+    <style type="text/css">
+    	body {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				padding-top: 3rem;
+			}
+			
+			.top {
+				line-height: 3rem;
+				width: 100%;
+				border-bottom: 1px solid #EEEEEE;
+				font-size: 1rem;
+				color: #007AFF;
+				height: 3rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.clear {
+				width: 20%;
+				display: inline-block;
+				float: left;
+			}
+			
+			.clear a img {
+				width: 1.3rem;
+				height: 1.5rem;
+				margin-left: 1rem;
+				margin-top: 10px;
+			}
+			
+			.zhong {
+				text-align: center;
+				display: inline-block;
+				width: 60%;
+				float: left;
+			}
+			
+			.zhong span {
+				font-family: PingFang-SC-Bold;
+				font-size: 1rem;
+				color: #4a5cb8;
+			}
+			
+			.home {
+				width: 20%;
+				display: inline-block;
+				float: left;
+			}
+			
+			.home a {
+				float: right;
+				margin-right: 1rem;
+			}
+			
+			.home a img {
+				width: 1.5rem;
+				height: 1.5rem;
+				margin-top: 10px;
+			}
+			.chezhu_fabu{
+				padding: 0.5rem 18px;
+			}
+			.list{
+				margin: 10px;
+				font-size: 16px;
+				color: #444444;
+				display: flex;
+			}
+			.left{
+				font-size: 1rem;
+				color: #4a59b5;
+				line-height: 32px;
+				width: 32%;
+				margin: 0;
+				padding: 0;
+			}
+			.right{
+				width: 68%;
+			}
+			.qi,.zhi{
+				font-size: 16px;
+				float: left;
+				width: 40%;
+				height: 30px;
+				border: 1px solid #999999;
+				text-align: center;
+				line-height: 30px;
+				border-radius: 4px;
+			}
+			img{
+				width: 8%;
+				height: 16px;
+				float: left;
+				margin: 0 6%;
+				margin-top: 7px;
+			}
+			textarea,input{
+				font-size: 14px;
+				color: #444444;
+			}
+			textarea{
+				height: 135px;
+				padding: 5px 8px;
+				resize: none;
+				border: 1px solid #999999;
+				border-radius: 5px;
+				width: 100%;
+			}
+			.xian{
+				border: 1px solid #444444;
+				line-height: 35px;
+				border-radius: 4px;
+				padding-left: 8px;
+			}
+			#fabu{
+				width: 100%;
+				line-height: 40px;
+				font-size: 16px;
+				color: #FFFFFF;
+				background: #ff4949;
+			}
+			.tishi{
+				padding: 18px;
+				color: #999999;
+			}
+			.zuo{
+				width: 25%;
+				float: left;
+			}
+			.neirong{
+				width: 75%;
+				float: left;
+			}
+    </style>
+</head>
+<body>
+	<!--顶部菜单-->
+		<div class="top">
+			<div class="clear">
+				<a href="gerenzhongxin.html"><img src="../img/个人中心.png" /></a>
+			</div>
+			<div class="zhong">
+				<span>车主发布</span>
+			</div>
+			<div class="home">
+				<a href="../index.html"><img src="../img/首页.png" /></a>
+			</div>
+		</div>
+	<!--车主发布详情-->
+		<div class="chezhu_fabu">
+			<div class="list qizhi">
+				<div class="left">【起止地】</div>
+				<div class="right">
+					<div class="qi">郑州</div>
+					<img src="../img/往返.png"/>
+					<div class="zhi">濮阳</div>
+				</div>
+			</div>
+			<div class="list luxian">
+				<div class="left">【路线】</div>
+				<div class="right en">
+					<textarea name="" rows="" cols="" placeholder="花园路口出发，走莲花路，目的地：获嘉老汽车站"></textarea>
+				</div>
+			</div>
+			<div class="list time">
+				<div class="left">【时间】</div>
+				<div class="right">
+					<div class="xuanze xian">11月16日 12:30</div>
+				</div>
+			</div>
+			<div class="list chexing">
+				<div class="left">【车型】</div>
+				<div class="right xian">
+					<input type=""  placeholder="例：宝马三系"/>
+				</div>
+			</div>
+			<div class="list yuzuo">
+				<div class="left">【余座】</div>
+				<div class="right">
+					<div class="jizuo xian">3座</div>
+				</div>
+			</div>
+			<div class="list afei">
+				<div class="left">【A费】</div>
+				<div class="right xian">
+					<input type="" name="" id="" value="" placeholder="50元"/>
+				</div>
+			</div>
+			<div class="list beizhu">
+				<div class="left">【备注】</div>
+				<div class="right">
+					<textarea name="" rows="" cols="" placeholder="保证坐了这次还想下次"></textarea>
+				</div>
+			</div>
+			<input type="button" name="" id="fabu" value="发布出行信息" /></button>
+		</div>
+		<!--提示-->
+		<div class="tishi">
+			<div class="zuo">
+				温馨提示：
+			</div>
+			<div class="neirong">
+				请务必保证所填信息真实，如拼友投诉，将被平台限制发信息。
+			</div>
+		</div>
+</body>
+</html>
+
+
+
+
+
+
